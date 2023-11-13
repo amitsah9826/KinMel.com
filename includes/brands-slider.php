@@ -9,7 +9,7 @@
 				</div><!--/.item-->
 
 				<div class="item">
-					<a href="http://localhost/%e0%a4%95%e0%a4%bf%e0%a4%a8%e0%a4%ae%e0%a5%87%e0%a4%b2/product-details.php?pid=22" class="image">
+					<a href="http://localhost/KinMel.com/product-details.php?pid=22" class="image">
 						<img data-echo="brandsimage/apple.jpg" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
@@ -35,7 +35,7 @@
 				
 
 				<div class="item">
-					<a href="#" class="image">
+					<a href="http://localhost/KinMel.com/product-details.php?pid=26" class="image">
 						<img data-echo="brandsimage/dell.jpg" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>

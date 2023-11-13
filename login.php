@@ -184,12 +184,15 @@ echo htmlentities($_SESSION['errmsg']="");
 	</span>
 		<div class="form-group">
 		    <label class="info-title" for="exampleInputEmail1">Email Address <span>*</span></label>
-		    <input type="email" name="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
+		    <input type="email" name="email" placeholder="Enter Email Address"class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
 		</div>
 	  	<div class="form-group">
 		    <label class="info-title" for="exampleInputPassword1">Password <span>*</span></label>
-		 <input type="password" name="password" class="form-control unicase-form-control text-input" id="exampleInputPassword1" >
+		 <input type="password" name="password"placeholder="Enter Password" class="form-control unicase-form-control text-input" id="exampleInputPassword1" >
 		</div>
+		 <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
 		<div class="radio outer-xs">
 		  	<a href="forgot-password.php" class="forgot-password pull-right">Forgot your Password?</a>
 		</div>

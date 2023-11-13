@@ -1,6 +1,8 @@
 
 <div class="header-nav animate-dropdown""<body style="background-color:;">
     <div class="container">
+
+
         <div class="yamm navbar navbar-default" role="navigation">
             <div class="navbar-header">
                 <button data-target="#mc-horizontal-menu-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -174,6 +176,7 @@ while($row=mysqli_fetch_array($sql))
 		</ul><!-- /.navbar-nav -->
   
 		<div class="clearfix"></div>	
+    
     			
 	</div>
   

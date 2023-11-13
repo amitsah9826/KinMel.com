@@ -2,8 +2,17 @@
 //session_start();
 
 ?>
+			<style>
+		.header-top-inner{ 
+      box-shadow: 0 0 5px 0 ; 
+      background: inherit; 
+      backdrop-filter: blur(10px); 
+      <!--margin: 100px; according to your need--> 
+}
+</style>
 
 <div class="top-bar animate-dropdown""<body style="background-color:#FAEBD7 ;">
+
 	<div class="container">
 		<div class="header-top-inner">
 			<div class="cnt-account">
@@ -25,14 +34,18 @@
 else{ ?>
 	
 				<li><a href="logout.php"><i class="fas fa-sign-in-alt"></i>Logout</a></li>
+				
 				<?php } ?>	
 				</ul>
 			</div><!-- /.cnt-account -->
 
 <div class="cnt-block">
+	
 				<ul class="list-unstyled list-inline">
+					
 					<li class="dropdown dropdown-small">
-						<a href="track-orders.php" "<body style="background-color:yellow;" class="btn btn-warning""dropdown-toggle" ><span class="key">Track Order</b></a>
+						
+						<a href="track-orders.php" "dropdown-toggle" ><span class="key">Track Order</b></a>
 						
 					</li>
 

@@ -253,20 +253,22 @@ function showSlides() {
 
 </body>
 </html> 
-
 	<div class="main-header">
     
 		<div class="container">
       
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
+       
 					<!-- ============================================================= LOGO ============================================================= -->
 <div class="logo">
+  
 	<a href="index.php">
 		
 		<h2><div class="item">
+      
 					<a href="index.php" class="image">
-						<img data-echo="brandsimage/4.png" align="center" " width="200" height="65" src="assets/images/blank.gif" alt="">
+          <img data-echo="brandsimage/4.png" align="center" " width="250" height="78" src="assets/images/blank.gif" alt="">
 					</a>	</h2>
 
 	</a>
@@ -277,7 +279,8 @@ function showSlides() {
     <form name="search" method="post" action="search-result.php">
         <div class="control-group">
 
-            <input class="search-field" placeholder="Search here..." name="product" required="required" />
+        <img data-echo="flag.gif"  width="40" height="45" src="assets/images/blank.gif" alt=""> <input class="search-field" placeholder="Search here..." name="product" required="required" />
+        
 
             <button class="search-button" type="submit" name="search"></button>    
 
@@ -410,11 +413,12 @@ if(!empty($_SESSION['cart'])){
 					
 				<a href="index.php" class="btn btn-upper btn-primary btn-block m-t-20">Continue Shooping</a>	
 			</div><!-- /.cart-total-->
-					
+   
 				
 		</li>
+    
 		</ul><!-- /.dropdown-menu-->
-		
+   
 	</div>
 	
 	<?php }?>
@@ -428,3 +432,4 @@ if(!empty($_SESSION['cart'])){
 		</div><!-- /.container -->
 
 	</div>
+  

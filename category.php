@@ -170,6 +170,15 @@ while($row=mysqli_fetch_array($sql))
 
     
 <!-- ============================================== COLOR: END ============================================== -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="280" height="500" controls autoplay muted loop >
+ </a>   <source src="asd.mp4" type="video/mp4">
+</video>
+</body>
+</html>
 
 	            	</div><!-- /.sidebar-filter -->
 	            </div><!-- /.sidebar-module-container -->

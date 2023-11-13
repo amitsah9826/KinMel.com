@@ -22,6 +22,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -45,6 +46,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
   
 }
 </style>
+
 		<!-- Meta -->
 		
 		<meta charset="utf-8">
@@ -54,6 +56,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 		<meta name="author" content="">
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
+		
 
 	    <title>Shopping Portal Home Page</title>
 
@@ -534,7 +537,9 @@ while ($row=mysqli_fetch_array($ret))
 
 										</div><!-- /.product-image -->
 									</div><!-- /.col -->
+									
 									<div class="col col-xs-6">
+										
 										<div class="product-info">
 											<h3 class="name"><a href="product-details.php?pid=<?php echo htmlentities($row['id']);?>"><?php echo htmlentities($row['productName']);?></a></h3>
 											<div class="rating rateit-small"></div>
@@ -545,14 +550,19 @@ while ($row=mysqli_fetch_array($ret))
 
 											</div><!-- /.product-price -->
 											<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add To Cart</a></div>
+											
 										</div>
+										
 									</div><!-- /.col -->
 								</div><!-- /.product-micro-row -->
 							</div><!-- /.product-micro -->
+							
 						</div>
 
 
+
 											</div>
+											
 				</div><?php } ?>
 							</div>
 		</section>
@@ -614,3 +624,9 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+						<audio id="music" src="as.mp3"</audio>
+<script>
+window.onload = function() {
+    document.getElementById("music").play();
+}
+</script>

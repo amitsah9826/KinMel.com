@@ -156,7 +156,10 @@ while($row=mysqli_fetch_array($sql))
 	<!-- ============================================== CATEGORY : END ============================================== -->	
 					<!-- ============================================== HOT DEALS ============================================== -->
 <div class="sidebar-widget hot-deals wow fadeInUp">
-	<h3 class="section-title">hot deals</h3>
+	
+<img src="hot.png" alt="Flowers in Chania" width="220" height="120">
+
+	
 	<div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs">
 		
 								   <?php
@@ -185,7 +188,8 @@ while ($rws=mysqli_fetch_array($ret)) {
 									Rs. <?php echo htmlentities($rws['productPrice']);?>.00
 								</span>
 									
-							    <span class="price-before-discount">Rs.<?php echo htmlentities($rws['productPriceBeforeDiscount']);?></span>					
+							    <span class="price-before-discount">Rs.<?php echo htmlentities($rws['productPriceBeforeDiscount']);?></span>
+								<img src="fire.gif" alt="Flowers in Chania" width="50" height="25">					
 							
 							</div><!-- /.product-price -->
 							
@@ -193,13 +197,16 @@ while ($rws=mysqli_fetch_array($ret)) {
 
 						<div class="cart clearfix animate-effect">
 							<div class="action">
+							
 								
 								<div class="">
+									
 									<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+										
 								<i class="fa fa-shopping-cart"></i>													
 							</button>
-						<a href="product-details.php?page=product&action=add&id=<?php echo $rws['id']; ?>" class="lnk btn btn-primary">Add to cart</a>
-													
+						<a href="product-details.php?page=product&action=add&id=<?php echo $rws['id']; ?>" class="lnk btn btn-primary">Add to cart </a>
+							
 															
 								</div>
 								
@@ -212,8 +219,18 @@ while ($rws=mysqli_fetch_array($ret)) {
 	    
     </div><!-- /.sidebar-widget -->
 </div>
-<a href="http://localhost/mobile_store/?p=view_product&id=33e75ff09dd601bbe69f351039152189"><img src="sw.gif" alt="Flowers in Chania" width="200" height="250"></a>
+
 <!-- ============================================== COLOR: END ============================================== -->
+<center><h5>Checkout This Product</h5></center>
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="250" height="140" controls autoplay muted loop >
+        <source src="aw.mkv" type="video/mp4">
+</video>
+</body>
+</html>
 				</div>
 			</div><!-- /.sidebar -->
 <?php 
@@ -300,7 +317,7 @@ while($row=mysqli_fetch_array($ret))
 
 					<div class='col-sm-6 col-md-7 product-info-block'>
 						<div class="product-info">
-							<h1 class="bg-red""name"><?php echo htmlentities($row['productName']);?></h1>
+							<h2 class="bg-red""name"><?php echo htmlentities($row['productName']);?></h2>
 <?php $rt=mysqli_query($con,"select * from productreviews where productId='$pid'");
 $num=mysqli_num_rows($rt);
 {

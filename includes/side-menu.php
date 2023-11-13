@@ -15,6 +15,30 @@ while($row=mysqli_fetch_array($sql))
 </li>
 </ul>
     </nav>
- <marquee direction = "up"> <a href="http://localhost/mobile_store/?p=view_product&id=33e75ff09dd601bbe69f351039152189"> <center> <img src="img_carr.png" alt="Flowers in Chania" width="190" height="250"></center></a></marquee>
-       
+    <!DOCTYPE html>
+<html>
+<body>
+
+<video width="250" height="140" controls autoplay muted loop>
+  <source src="sd.mp4" type="video/mp4">
+  <source src="asd.mp4" type="video/mp4">
+ 
+
+</video>
+
+</body>
+</html>
+<center><h5>Checkout This Product</h5></center>
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="250" height="140" controls autoplay muted loop >
+ </a>   <source src="ww.mkv" type="video/mp4">
+</video>
+</body>
+</html>
+ 
 </div>
+
+
