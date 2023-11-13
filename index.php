@@ -630,3 +630,23 @@ window.onload = function() {
     document.getElementById("music").play();
 }
 </script>
+<script type="module" src="https://cookieconsent.popupsmart.com/js/CookieConsent.js" ></script>
+<script type="text/javascript" src="https://cookieconsent.popupsmart.com/js/App.js"></script>
+<script>
+    popupsmartCookieConsentPopup({
+        "siteName" : "KinMel" ,
+        "notice_banner_type": "popup",
+        "consent_type": "gdpr",
+        "palette": "light",
+        "language": "English",
+        "privacy_policy_url" : "http://localhost/KinMel.com/index.php" ,
+        "preferencesId" : "#" ,
+        "companyLogoURL" : "https://d2r80wdbkwti6l.cloudfront.net/oHy6ei23hTgdfPeaZ5YkUQaHOazXswVg.jpg"
+    });
+</script>
+<!-- http://localhost/KinMel.com/index.php start -->
+    <script type="text/plain" src="https://cookieconsent.popupsmart.com/src/js/popper.js" cookie-consent="strictly-necessary"></script>
+
+    <!-- http://localhost/KinMel.com/index.php end -->
+    
+<noscript>Cookie Consent by <a href="https://popupsmart.com/" rel="nofollow noopener">Popupsmart Website</a></noscript> 

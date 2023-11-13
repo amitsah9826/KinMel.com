@@ -29,7 +29,7 @@
 					<li><a href="checkout.php"><i class="icon fa fa-key"></i>Checkout</a></li>
 					<?php if(strlen($_SESSION['login'])==0)
     {   ?>
-<li><a href="login.php"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+<li><a href="login.php"><i class="icon fa fa-user"></i>Login</a></li>
 <?php }
 else{ ?>
 	
@@ -45,7 +45,7 @@ else{ ?>
 					
 					<li class="dropdown dropdown-small">
 						
-						<a href="track-orders.php" "dropdown-toggle" ><span class="key">Track Order</b></a>
+						<a href="track-orders.php"  class="""dropdown-toggle" ><span class="key">Track Order</b></a>
 						
 					</li>
 
