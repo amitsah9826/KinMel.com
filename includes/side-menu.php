@@ -8,13 +8,14 @@
 while($row=mysqli_fetch_array($sql))
 {
     ?>
-                <a href="category.php?cid=<?php echo $row['id'];?>" class="dropdown-toggle"><img src="Untitled-3 copy.png" alt="Flowers in Chania" width="50" height="50"> <i class=""></i>
+                <a href="category.php?cid=<?php echo $row['id'];?>" class="dropdown-toggle"><img src="elec.gif" alt="Flowers in Chania" width="50" height="50"> <i class=""></i>
                 <?php echo $row['categoryName'];?></a>
                 <?php }?>
                         
 </li>
 </ul>
     </nav>
+    <center><h5><b>Available for a Limited Time Only</b></h5></center>
     <!DOCTYPE html>
 <html>
 <body>

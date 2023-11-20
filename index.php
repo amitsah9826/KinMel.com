@@ -566,6 +566,85 @@ while ($row=mysqli_fetch_array($ret))
 				</div><?php } ?>
 							</div>
 		</section>
+		<div class="container">
+<div id="brands-carousel" class="logo-slider wow fadeInUp">
+<p><center><h5><p id="amit">Choose Categories</p></h5></center>
+<style>
+					@keyframes amit {
+  8% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* attach the animations to the elements via their id attribute using a delay of 0s and 50% of the runtime respectively */
+
+
+#amit {
+  animation: amit 2s infinite 1.2s;
+}
+</style>
+		<div class="logo-slider-inner">	
+			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
+				<div class="item">
+				
+          <a href="http://localhost/KinMel.com/sub-category.php?scid=14" class="image">
+						<img data-echo="brandsimage/3.png" " width="70" height="80" src="assets/images/blank.gif" alt="">
+					</a>	
+				</div><!--/.item-->
+
+				<div class="item">
+					<a href="http://localhost/KinMel.com/sub-category.php?scid=16" class="image">
+						<img data-echo="brandsimage/7.png" width="70" height="80" src="assets/images/blank.gif" alt="">
+					</a>	
+				</div><!--/.item-->
+
+				<div class="item">
+					<a href="http://localhost/KinMel.com/sub-category.php?scid=15" class="image">
+						<img data-echo="brandsimage/8.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
+					</a>	
+				</div><!--/.item-->
+
+				<div class="item">
+					<a href="#" class="image">
+						<img data-echo="brandsimage/12.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
+					</a>	
+				</div>
+
+				<div class="item">
+					<a href="#" class="image">
+						<img data-echo="brandsimage/15.png" width="70" height="80" src="assets/images/blank.gif" alt="">
+					</a>	
+				</div>
+
+				
+
+				<div class="item">
+					<a href="http://localhost/KinMel.com/product-details.php?pid=26" class="image">
+						<img data-echo="brandsimage/20.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
+					</a>	
+				</div>
+<div class="item">
+					<a href="#" class="image">
+						<img data-echo="brandsimage/21.png" width="70" height="80" src="assets/images/blank.gif" alt="">
+					</a>	
+				</div>
+				
+
+
+
+
+		    </div><!-- /.owl-carousel #logo-slider -->
+		</div><!-- /.logo-slider-inner -->
+	
+</div><!-- /.logo-slider -->
+</div>
 <?php include('includes/brands-slider.php');?>
 </div>
 </div>

@@ -262,7 +262,6 @@ function showSlides() {
        
 					<!-- ============================================================= LOGO ============================================================= -->
 <div class="logo">
-  
 	<a href="index.php">
 		
 		<h2><div class="item">
@@ -279,7 +278,7 @@ function showSlides() {
     <form name="search" method="post" action="search-result.php">
         <div class="control-group">
 
-        <img data-echo="flag.gif"  width="40" height="45" src="assets/images/blank.gif" alt=""> <input class="search-field" placeholder="Search here..." name="product" required="required" />
+        <img data-echo="flag.gif"  width="40" height="45" src="assets/images/blank.gif" alt=""><input class="search-field" placeholder="Search here..." name="product" required="required" />
         
 
             <button class="search-button" type="submit" name="search"></button>    

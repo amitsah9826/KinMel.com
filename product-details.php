@@ -570,7 +570,7 @@ html,body{
 }
 </style>
 
-<b><span class="social-label">Share :</span></b>
+
       <meta charset="utf-8">
 	  
       
@@ -578,6 +578,7 @@ html,body{
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
    <body>
+   <img src="download.png" alt="Flowers in Chania" width="35" height="35">
       <div class="wrapper">
          <div class="icon facebook">
             <div class="tooltip">
