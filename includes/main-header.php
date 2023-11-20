@@ -376,12 +376,12 @@ if(!empty($_SESSION['cart'])){
 				<div class="total-price-basket">
 					<span class="lbl">cart -</span>
 					<span class="total-price">
-						<span class="sign">Rs.</span>
+						<span class="sign">रू.</span>
 						<span class="value">00.00</span>
 					</span>
 				</div>
 				<div class="basket">
-					<i class="glyphicon glyphicon-shopping-cart"></i>
+        <img src="run.gif" alt="Flowers in Chania" width="25" height="25">
 				</div>
 				<div class="basket-item-count"><span class="count">0</span></div>
 			
@@ -393,14 +393,19 @@ if(!empty($_SESSION['cart'])){
 		
 		
 			<li>
+        
 				<div class="cart-item product-summary">
+          
 					<div class="row">
+            
 						<div class="col-xs-12">
-							Your Shopping Cart is Empty.
+            <img src="god.png" alt="Flowers in Chania" width="" height="120">
+							Cart is Empty.
 						</div>
-						
+					
 						
 					</div>
+          
 				</div><!-- /.cart-item -->
 			
 				
@@ -419,6 +424,7 @@ if(!empty($_SESSION['cart'])){
 		</ul><!-- /.dropdown-menu-->
    
 	</div>
+  
 	
 	<?php }?>
 

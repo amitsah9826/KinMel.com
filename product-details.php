@@ -185,10 +185,10 @@ while ($rws=mysqli_fetch_array($ret)) {
 
 							<div class="product-price">	
 								<span class="price">
-									Rs. <?php echo htmlentities($rws['productPrice']);?>.00
+								रू. <?php echo htmlentities($rws['productPrice']);?>.00
 								</span>
 									
-							    <span class="price-before-discount">Rs.<?php echo htmlentities($rws['productPriceBeforeDiscount']);?></span>
+							    <span class="price-before-discount">रू.<?php echo htmlentities($rws['productPriceBeforeDiscount']);?></span>
 								<img src="fire.gif" alt="Flowers in Chania" width="50" height="25">					
 							
 							</div><!-- /.product-price -->
@@ -398,9 +398,9 @@ $num=mysqli_num_rows($rt);
 
 									<div class="col-sm-6">
 										<div class="price-box">
-											<span class="price">Rs. <?php echo htmlentities($row['productPrice']);?></span>
+											<span class="price">रू. <?php echo htmlentities($row['productPrice']);?></span>
 											
-											<p id="two"> <span class="price-strike bg-red">Rs.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span></p>
+											<p id="two"> <span class="price-strike bg-red">रू.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span></p>
 										</div>
 									</div>
 
@@ -855,8 +855,8 @@ while($rw=mysqli_fetch_array($qry))
 
 			<div class="product-price">	
 				<span class="price">
-					Rs.<?php echo htmlentities($rw['productPrice']);?>			</span>
-										     <span class="price-before-discount">Rs.
+					रू.<?php echo htmlentities($rw['productPrice']);?>			</span>
+										     <span class="price-before-discount">रू.
 										     <?php echo htmlentities($rw['productPriceBeforeDiscount']);?></span>
 									
 			</div><!-- /.product-price -->

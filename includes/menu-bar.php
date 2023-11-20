@@ -193,6 +193,101 @@ while($row=mysqli_fetch_array($sql))
 </div>
 
 <img src="flow9.png" alt="Flowers in Chania" width="1600" height="80">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
 <div class="container">
 <div id="brands-carousel" class="logo-slider wow fadeInUp">
 <p><center><h5><p id="amit">Choose Categories</p></h5></center>
@@ -222,31 +317,31 @@ while($row=mysqli_fetch_array($sql))
 				<div class="item">
 				
           <a href="http://localhost/KinMel.com/sub-category.php?scid=14" class="image">
-						<img data-echo="brandsimage/3.png" " width="70" height="80" src="assets/images/blank.gif" alt="">
+					<img id="myImg"	<img data-echo="brandsimage/3.png" " width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="http://localhost/KinMel.com/sub-category.php?scid=16" class="image">
-						<img data-echo="brandsimage/7.png" width="70" height="80" src="assets/images/blank.gif" alt="">
+					<img id="myImg"	<img data-echo="brandsimage/7.png" width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="http://localhost/KinMel.com/sub-category.php?scid=15" class="image">
-						<img data-echo="brandsimage/8.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
+          <img id="myImg"		<img data-echo="brandsimage/8.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="brandsimage/12.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
+          <img id="myImg"		<img data-echo="brandsimage/12.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="brandsimage/15.png" width="70" height="80" src="assets/images/blank.gif" alt="">
+					<img id="myImg"	<img data-echo="brandsimage/15.png" width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>
 
@@ -254,16 +349,50 @@ while($row=mysqli_fetch_array($sql))
 
 				<div class="item">
 					<a href="http://localhost/KinMel.com/product-details.php?pid=26" class="image">
-						<img data-echo="brandsimage/20.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
+					<img id="myImg"	<img data-echo="brandsimage/20.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>
 <div class="item">
 					<a href="#" class="image">
-						<img data-echo="brandsimage/21.png" width="70" height="80" src="assets/images/blank.gif" alt="">
+					<img id="myImg"	<img data-echo="brandsimage/21.png" width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>
 				
 
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
 
 
 
