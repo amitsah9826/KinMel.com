@@ -53,6 +53,8 @@ if(isset($_POST['submit']))
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 78% 78%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   
   
 }
@@ -155,6 +157,7 @@ while($row=mysqli_fetch_array($sql))
 </div>
 	<!-- ============================================== CATEGORY : END ============================================== -->	
 					<!-- ============================================== HOT DEALS ============================================== -->
+					
 <div class="sidebar-widget hot-deals wow fadeInUp">
 	
 <img src="hot.png" alt="Flowers in Chania" width="220" height="120">
@@ -231,6 +234,7 @@ while ($rws=mysqli_fetch_array($ret)) {
 </video>
 </body>
 </html>
+
 				</div>
 			</div><!-- /.sidebar -->
 <?php 
@@ -445,7 +449,8 @@ $num=mysqli_num_rows($rt);
 									</div>
 
 									<div class="col-sm-7">
-										<a href="product-details.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
+								
+										<a href="-+roduct-details.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="btn btn-primary""<body style="background-color:#FF6700;">	<img src="shopping-cart-.gif" alt="Flowers in Chania" width="35" height="35">ADD TO CART</a>
 									</div>
 
 									
@@ -453,7 +458,8 @@ $num=mysqli_num_rows($rt);
 							</div><!-- /.quantity-container -->
 							<a href="http://localhost/mobile_store/?p=view_product&id=33e75ff09dd601bbe69f351039152189"> <center> <img src="s.jpg" alt="Flowers in Chania" width="400" height="55"></center></a>
 							<center><b><span class="social-label">...........................................................................................................................</span></b></center>
-							<html lang="en" dir="ltr">
+							 <img src="as.gif" alt="Flowers in Chania" width="35" height="30"><html lang="en" dir="ltr">
+								
    <head>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -578,7 +584,7 @@ html,body{
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
    <body>
-   <img src="download.png" alt="Flowers in Chania" width="35" height="35">
+  
       <div class="wrapper">
          <div class="icon facebook">
             <div class="tooltip">
@@ -644,9 +650,9 @@ html,body{
 						
 						<div class="col-sm-3">
 							<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
-								<li class="active"><a data-toggle="tab" href="#description">DESCRIPTION</a></li>
+								<li class="active"><a data-toggle="tab" onclick="myFunction()" id="myBtn"href="#description">DESCRIPTION</a></li>
 								
-								<li><a data-toggle="tab" href="#review">REVIEW</a></li>
+								<li><a data-toggle="tab"   href="#review">REVIEW</a></li>
 							</ul><!-- /.nav-tabs #product-tabs -->
 						</div>
 						
@@ -670,6 +676,8 @@ html,body{
 									<div class="product-tab">
 								
 									<h2><b><center><p id="two">Product Specification</p></h2></center></b>
+									<h6><b><center><p id="two">विशेषताहरु :-</h6></center></b>
+									
 					<style>
 					@keyframes fade {
   8% {
@@ -694,7 +702,11 @@ html,body{
   animation: fade 2s infinite 1.2s;
 }
 </style>
-					<span id="dots"></span><span id="more">  <p class="text"><?php echo $row['productDescription'];?><center><img src="dus1.png" alt="Flowers in Chania" width="500" height="160"></center></p></span></p>
+					<span id="dots"></span><span id="more">  <p class="text"><?php echo $row['productDescription'];?><center>
+					<h4><b>KinMel Store Located on Google Maps</b></h4>
+					<h6>किन्मेल स्टोर गुगल नक्सामा अवस्थित छ</h6>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28279.39743637692!2d85.53045172784593!3d27.626849316657445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb0f33b1a23b53%3A0xe8ec0b92bdf38a54!2sBanepa!5e0!3m2!1sen!2snp!4v1700561563264!5m2!1sen!2snp" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<img src="dus1.png" alt="Flowers in Chania" width="500" height="160"></center></p></span></p>
 					
 					<center><button class="btn btn-outline-secondary""button" onclick="myFunction()" id="myBtn">Read more</button></center>
 					

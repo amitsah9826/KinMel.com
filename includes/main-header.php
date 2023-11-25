@@ -13,6 +13,7 @@
 	}
 ?>
 
+
 <html lang="en" dir="ltr">
    <head>
     <style>
@@ -143,6 +144,7 @@ html,body{
 }
 </style>
 
+
 	
 <!DOCTYPE html>
 <html>
@@ -253,15 +255,19 @@ function showSlides() {
 
 </body>
 </html> 
+
+
 	<div class="main-header">
     
 		<div class="container">
       
 			<div class="row">
+        
 				<div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
        
 					<!-- ============================================================= LOGO ============================================================= -->
-<div class="logo">
+
+          <div class="logo">
 	<a href="index.php">
 		
 		<h2><div class="item">
@@ -277,10 +283,10 @@ function showSlides() {
 <div class="search-area">
     <form name="search" method="post" action="search-result.php">
         <div class="control-group">
-
+ 
         <img data-echo="flag.gif"  width="40" height="45" src="assets/images/blank.gif" alt=""><input class="search-field" placeholder="Search here..." name="product" required="required" />
         
-
+        
             <button class="search-button" type="submit" name="search"></button>    
 
         </div>
@@ -381,7 +387,7 @@ if(!empty($_SESSION['cart'])){
 					</span>
 				</div>
 				<div class="basket">
-        <img src="run.gif" alt="Flowers in Chania" width="25" height="25">
+        <img src="run1.gif" alt="Flowers in Chania" width="25" height="25">
 				</div>
 				<div class="basket-item-count"><span class="count">0</span></div>
 			
@@ -432,9 +438,11 @@ if(!empty($_SESSION['cart'])){
 
 
 <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->				</div><!-- /.top-cart-row -->
-			</div><!-- /.row -->
+			
+</div><!-- /.row -->
 
 		</div><!-- /.container -->
 
 	</div>
+
   

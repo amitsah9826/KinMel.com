@@ -30,11 +30,13 @@
   transform: translateY(4px);
 }
 </style>
+
                 <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
-	<div class="nav-outer">
+	<div class="nav-outer ">
 		<ul class="nav navbar-nav">
 			<li class="bg-navy">
-				<a href="index.php" data-hover="dropdown" class="dropdown-toggle">Home</a>
+        
+				<a href="index.php" data-hover="dropdown " class="dropdown-toggle"><i class="fa fa-home"></a></i>
         
 							</li>
       
@@ -49,6 +51,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
 }
 html,body{
   display: center;
@@ -201,6 +204,7 @@ while($row=mysqli_fetch_array($sql))
 body {font-family: Arial, Helvetica, sans-serif;}
 
 #myImg {
+  
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -210,6 +214,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* The Modal (background) */
 .modal {
+  
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -310,9 +315,38 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 #amit {
   animation: amit 2s infinite 1.2s;
+  
 }
 </style>
-		<div class="logo-slider-inner">	
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img:hover {
+  animation: shake 0.8s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+</head>
+<body>
+
+<center><div class="logo-slider-inner">	
 			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
 				<div class="item">
 				
@@ -334,7 +368,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 				</div><!--/.item-->
 
 				<div class="item">
-					<a href="#" class="image">
+					<a href="http://localhost/KinMel.com/sub-category.php?scid=17" class="image">
           <img id="myImg"		<img data-echo="brandsimage/12.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>
@@ -356,8 +390,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 					<a href="#" class="image">
 					<img id="myImg"	<img data-echo="brandsimage/21.png" width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
-				</div>
+				</div></center>
 				
+</body>
+</html>
+
+		
 
 
 

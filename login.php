@@ -183,11 +183,15 @@ echo htmlentities($_SESSION['errmsg']="");
 ?>
 	</span>
 		<div class="form-group">
+		<img src="login-.gif" alt="Flowers in Chania" width="45" height="45">
 		    <label class="info-title" for="exampleInputEmail1">Email Address <span>*</span></label>
+		
 		    <input type="email" name="email" placeholder="Enter Email Address"class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
 		</div>
 	  	<div class="form-group">
+		  <img src="password.gif" alt="Flowers in Chania" width="45" height="45">
 		    <label class="info-title" for="exampleInputPassword1">Password <span>*</span></label>
+			
 		 <input type="password" name="password"placeholder="Enter Password" class="form-control unicase-form-control text-input" id="exampleInputPassword1" >
 		</div>
 		 <label>

@@ -1,5 +1,5 @@
 <div class="side-menu animate-dropdown outer-bottom-xs">
-    <div class="head""<body style="background-color:#98a0a3;"><i class="fa fa-fw fa-align-left"></i> Categories</div>        
+    <div class="head""<body style="background-color:#98a0a3;"><img src="menu.gif" alt="Flowers in Chania" width="35" height="35"></i> Categories</div>        
     <nav class="yamm megamenu-horizontal" role="navigation">
   
         <ul class="nav">

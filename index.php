@@ -126,7 +126,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 <div id="hero" class="homepage-slider3">
 	<div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
 		<div class="full-width-slider">	
-			<div class="item" style="background-image: url(assets/images/sliders/banner2.png);">
+			<div class="item" style="background-image: url(assets/images/sliders/amtisah1.jpg);">
 				<!-- /.container-fluid -->
 			</div><!-- /.item -->
 		</div><!-- /.full-width-slider -->
@@ -147,7 +147,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 		</div><!-- /.full-width-slider -->
 	    
 	    <div class="full-width-slider">
-			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/slider3.jpg);">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/banner13.jpg);">
 			</div>
 			
 			
@@ -188,6 +188,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 						</div>
 					</div>
 					<h6 class="text">free ship-on oder over रू.600</h6>	
+					
 				</div>
 			</div><!-- .col -->
 
@@ -268,16 +269,15 @@ while ($row=mysqli_fetch_array($ret))
 			<div class="product-price">	
 				<span class="price">
 					रू.<?php echo htmlentities($row['productPrice']);?>			</span>
-										     <span class="price-before-discount">रू.<?php echo htmlentities($row['productPriceBeforeDiscount']);?>	</span>
+					<span id="amit" class="price-before-discount"><FONT COLOR="red">रू.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span></FONT>
 									
 			</div><!-- /.product-price -->
 			
 		</div><!-- /.product-info -->
 		
-		<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to cart</a>
+	
+		<img src="shopping.gif" alt="Flowers in Chania" width="55" height="55" data-toggle="dropdown" type="button">												
+		<button type="button"<a href="index.php?page=product&action=add&id=+++++++---<?php echo $row['id']; ?>" <body style="background-color:gray;" class="lnk btn btn-primary">Add to cart</a></button>
 			
 				</div><!-- /.product -->
       
@@ -292,11 +292,11 @@ while ($row=mysqli_fetch_array($ret))
 
 
 
-	<div class="tab-pane" id="books">
+	<div class="tab-pane" id="Printer">
 					<div class="product-slider">
 						<div class="owl-carousel home-owl-carousel custom-carousel owl-theme">
 		<?php
-$ret=mysqli_query($con,"select * from products where category=3");
+$ret=mysqli_query($con,"select * from products where category=4 and subCategory=17");
 while ($row=mysqli_fetch_array($ret)) 
 {
 	# code...
@@ -312,7 +312,7 @@ while ($row=mysqli_fetch_array($ret))
 		<div class="product-image">
 			<div class="image">
 				<a href="product-details.php?pid=<?php echo htmlentities($row['id']);?>">
-				<img id="myImg"	<img id="myImg"	<img  src="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>" data-echo="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>"  width="180" height="300" alt=""></a>
+				<img id="myImg"	<img id="myImg"	<img  src="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>" data-echo="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>"  width="265" height="320" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        		   
@@ -332,7 +332,7 @@ while ($row=mysqli_fetch_array($ret))
 			</div><!-- /.product-price -->
 			
 		</div><!-- /.product-info -->
-					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
+		<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
 			</div><!-- /.product -->
       
 			</div><!-- /.products -->
@@ -366,7 +366,7 @@ while ($row=mysqli_fetch_array($ret))
 		<div class="product-image">
 			<div class="image">
 				<a href="product-details.php?pid=<?php echo htmlentities($row['id']);?>">
-				<img id="myImg"	<img id="myImg"	<img  src="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>" data-echo="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>"  width="180" height="300" alt=""></a>
+				<img id="myImg"	<img id="myImg"	<img  src="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>" data-echo="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>"  width="265" height="320" alt=""></a>
 			</div>		
 
 			                        		   
@@ -386,7 +386,7 @@ while ($row=mysqli_fetch_array($ret))
 			</div>
 			
 		</div>
-					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
+			<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
 			</div>
       
 			</div>
@@ -406,11 +406,11 @@ while ($row=mysqli_fetch_array($ret))
 				<div class="row">
 					<div class="col-md-6">
 	                   <section class="section">
-	                   	<h3 class="section-title">Smart Phones</h3>
+	                   	<h3 class="section-title">Mobile Phones</h3>
 	                   	<div class="owl-carousel homepage-owl-carousel custom-carousel outer-top-xs owl-theme" data-item="2">
 	   
 <?php
-$ret=mysqli_query($con,"select * from products where category=4 and subCategory=4");
+$ret=mysqli_query($con,"select * from products where category=4 and subCategory=15");
 while ($row=mysqli_fetch_array($ret)) 
 {
 ?>
@@ -436,15 +436,16 @@ while ($row=mysqli_fetch_array($ret))
 			<div class="product-price">	
 				<span class="price">
 					रू. <?php echo htmlentities($row['productPrice']);?>			</span>
-										     <span class="price-before-discount">रू.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
+										     <span id="amit" class="price-before-discount"><FONT COLOR="red">रू.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span></FONT>
 									
 			</div>
 			
 		</div>
-					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-danger">Add to Cart</a></div>
-			</div>
-			</div>
+		<img src="shopping.gif" alt="Flowers in Chania" width="55" height="55" data-toggle="dropdown" type="button">
+		<button type="button"<a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-black""<body style="background-color:#00FFBB;"><FONT COLOR="black">Add to Cart</FONT></a></div></button>
+</div>
 		</div>
+		
 <?php }?>
 
 	
@@ -456,7 +457,7 @@ while ($row=mysqli_fetch_array($ret))
 							<h3 class="section-title">Laptops</h3>
 		                   	<div class="owl-carousel homepage-owl-carousel custom-carousel outer-top-xs owl-theme" data-item="2">
 	<?php
-$ret=mysqli_query($con,"select * from products where category=4 and subCategory=6");
+$ret=mysqli_query($con,"select * from products where category=4 and subCategory=16");
 while ($row=mysqli_fetch_array($ret)) 
 {
 ?>
@@ -482,14 +483,14 @@ while ($row=mysqli_fetch_array($ret))
 			<div class="product-price">	
 				<span class="price">
 					रू .<?php echo htmlentities($row['productPrice']);?>			</span>
-										     <span class="price-before-discount">रू.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
+					<span id="amit" class="price-before-discount"><FONT COLOR="red">रू.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span></FONT>
 									
 			</div>
 			
 		</div>
-		
-					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-warning">Add to Cart</a></div>
-			</div>
+		<img src="shopping.gif" alt="Flowers in Chania" width="55" height="55" data-toggle="dropdown" type="button">	
+		<button type="button"<a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-black""<body style="background-color:yellow;"><FONT COLOR="#ff0000">Add to Cart</FONT></a></div></button>
+			
 			</div>
 		</div>
 <?php }?>
@@ -549,7 +550,7 @@ while ($row=mysqli_fetch_array($ret))
 												</span>
 
 											</div><!-- /.product-price -->
-											<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add To Cart</a></div>
+											<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary""<body style="background-color:orange;">Add To Cart</a></div>
 											
 										</div>
 										
@@ -566,6 +567,7 @@ while ($row=mysqli_fetch_array($ret))
 				</div><?php } ?>
 							</div>
 		</section>
+		
 		<div class="container">
 <div id="brands-carousel" class="logo-slider wow fadeInUp">
 <p><center><h5><p id="amit">Choose Categories</p></h5></center>
@@ -703,12 +705,12 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-						<audio id="music" src="as.mp3"</audio>
+					<!--	<audio id="music" src="as.mp3"</audio>
 <script>
 window.onload = function() {
     document.getElementById("music").play();
 }
-</script>
+</script>-->
 <script type="module" src="https://cookieconsent.popupsmart.com/js/CookieConsent.js" ></script>
 <script type="text/javascript" src="https://cookieconsent.popupsmart.com/js/App.js"></script>
 <script>
@@ -857,3 +859,14 @@ span.onclick = function() {
 
 </body>
 </html>
+<style>
+.myBtn {
+box-shadow: 0 0 5px gray,
+0 0 10px gray;
+}
+button:hover {
+box-shadow: 0 0 5px gray,
+0 0 20px gray, 0 0 20px gray,
+0 0 50px gray, 0 0 100px gray;
+}
+<style>
