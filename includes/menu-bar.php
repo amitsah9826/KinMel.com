@@ -170,7 +170,7 @@ while($row=mysqli_fetch_array($sql))
 
 			<li class="dropdown yamm">
       
-				<a href="category.php?cid=<?php echo $row['id'];?>"> <?php echo $row['categoryName'];?></a>
+			
 			
 			</li>
 			<?php } ?>
@@ -350,25 +350,25 @@ img:hover {
 			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
 				<div class="item">
 				
-          <a href="http://localhost/KinMel.com/sub-category.php?scid=14" class="image">
+          <a href="" class="image">
 					<img id="myImg"	<img data-echo="brandsimage/3.png" " width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
-					<a href="http://localhost/KinMel.com/sub-category.php?scid=16" class="image">
+					<a href="" class="image">
 					<img id="myImg"	<img data-echo="brandsimage/7.png" width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
-					<a href="http://localhost/KinMel.com/sub-category.php?scid=15" class="image">
+					<a href="" class="image">
           <img id="myImg"		<img data-echo="brandsimage/8.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
-					<a href="http://localhost/KinMel.com/sub-category.php?scid=17" class="image">
+					<a href="" class="image">
           <img id="myImg"		<img data-echo="brandsimage/12.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>
@@ -382,7 +382,7 @@ img:hover {
 				
 
 				<div class="item">
-					<a href="http://localhost/KinMel.com/product-details.php?pid=26" class="image">
+					<a href="" class="image">
 					<img id="myImg"	<img data-echo="brandsimage/20.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>

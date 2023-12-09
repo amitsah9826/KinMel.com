@@ -295,9 +295,9 @@ function showSlides() {
 
 <!-- ============================================================= SEARCH AREA : END ============================================================= -->				</div><!-- /.top-search-holder -->
 
-				<div class="col-xs-12 col-sm-12 col-md-3 animate-dropdown top-cart-row">
-					<!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
-<?php
+				<!--<div class="col-xs-12 col-sm-12 col-md-3 animate-dropdown top-cart-row">
+		<!--			 ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+<!--<?php
 if(!empty($_SESSION['cart'])){
 	?>
 	<div class="dropdown dropdown-cart">
@@ -421,7 +421,7 @@ if(!empty($_SESSION['cart'])){
 				
 				<div class="clearfix"></div>
 					
-				<a href="index.php" class="btn btn-upper btn-primary btn-block m-t-20">Continue Shooping</a>	
+			<!--	<a href="index.php" class="btn btn-upper btn-primary btn-block m-t-20">Continue Shooping</a>	
 			</div><!-- /.cart-total-->
    
 				
