@@ -323,7 +323,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-img:hover {
+.item:hover {
   animation: shake 0.8s;
   animation-iteration-count: infinite;
   
@@ -350,7 +350,7 @@ img:hover {
 			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
 				<div class="item">
 				
-          <a href="" class="image">
+          <a href="" class="image1">
 					<img id="myImg"	<img data-echo="brandsimage/3.png" " width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
