@@ -323,7 +323,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.item:hover {
+.item1:hover {
   animation: shake 0.8s;
   animation-iteration-count: infinite;
   
@@ -348,32 +348,32 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 <center><div class="logo-slider-inner">	
 			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
-				<div class="item">
+				<div class="item1">
 				
-          <a href="" class="image1">
+          <a href="http://localhost/KinMel.com/sub-category.php?scid=14" class="image1">
 					<img id="myImg"	<img data-echo="brandsimage/3.png" " width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
-				<div class="item">
-					<a href="" class="image">
+				<div class="item1">
+					<a href="http://localhost/KinMel.com/sub-category.php?scid=16" class="image">
 					<img id="myImg"	<img data-echo="brandsimage/7.png" width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
-				<div class="item">
-					<a href="" class="image">
+				<div class="item1">
+					<a href="http://localhost/KinMel.com/sub-category.php?scid=15" class="image">
           <img id="myImg"		<img data-echo="brandsimage/8.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
-				<div class="item">
-					<a href="" class="image">
+				<div class="item1">
+					<a href="http://localhost/KinMel.com/sub-category.php?scid=17" class="image">
           <img id="myImg"		<img data-echo="brandsimage/12.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>
 
-				<div class="item">
+				<div class="item1">
 					<a href="#" class="image">
 					<img id="myImg"	<img data-echo="brandsimage/15.png" width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	
@@ -381,12 +381,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 				
 
-				<div class="item">
+				<div class="item1">
 					<a href="" class="image">
 					<img id="myImg"	<img data-echo="brandsimage/20.png" width="70" height="80"  src="assets/images/blank.gif" alt="">
 					</a>	
 				</div>
-<div class="item">
+<div class="item1">
 					<a href="#" class="image">
 					<img id="myImg"	<img data-echo="brandsimage/21.png" width="70" height="80" src="assets/images/blank.gif" alt="">
 					</a>	

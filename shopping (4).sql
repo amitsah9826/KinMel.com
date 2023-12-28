@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 17, 2023 at 10:57 AM
+-- Generation Time: Dec 28, 2023 at 02:22 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -35,6 +35,13 @@ CREATE TABLE `admin` (
   `updationDate` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`, `creationDate`, `updationDate`) VALUES
+(1, 'amit', '3f25f7acce99d5c49a29a884b82cb202', '2017-01-24 16:21:18', '25-10-2023 12:28:55 PM');
+
 -- --------------------------------------------------------
 
 --
@@ -48,6 +55,13 @@ CREATE TABLE `category` (
   `creationDate` timestamp NOT NULL DEFAULT current_timestamp(),
   `updationDate` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`id`, `categoryName`, `categoryDescription`, `creationDate`, `updationDate`) VALUES
+(4, 'Electronics', 'Electronic Products', '2023-12-26 19:19:32', '');
 
 -- --------------------------------------------------------
 
@@ -135,6 +149,16 @@ CREATE TABLE `subcategory` (
   `updationDate` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `subcategory`
+--
+
+INSERT INTO `subcategory` (`id`, `categoryid`, `subcategory`, `creationDate`, `updationDate`) VALUES
+(14, 4, 'Television', '2023-12-27 07:49:09', '28-12-2023 01:21:24 PM'),
+(15, 4, 'Mobiles', '2023-12-27 07:50:10', NULL),
+(16, 4, 'Laptops', '2023-12-27 07:51:07', NULL),
+(17, 4, 'Printer', '2023-12-27 14:06:15', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -155,10 +179,32 @@ CREATE TABLE `userlog` (
 --
 
 INSERT INTO `userlog` (`id`, `userEmail`, `userip`, `loginTime`, `logout`, `status`) VALUES
-(83, 'bibek@gmail.com', 0x3a3a3100000000000000000000000000, '2023-12-10 06:02:39', '10-12-2023 11:33:10 AM', 1),
-(84, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-12-10 06:04:49', '10-12-2023 11:42:06 AM', 1),
-(85, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-12-10 06:13:41', '10-12-2023 11:46:26 AM', 1),
-(86, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-12-10 06:16:37', NULL, 1);
+(55, 'amitsah@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-05 08:27:01', '05-11-2023 01:59:47 PM', 1),
+(56, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-05 08:32:36', '05-11-2023 02:11:54 PM', 1),
+(57, 'amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-05 08:43:36', NULL, 0),
+(58, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-05 08:43:44', NULL, 1),
+(59, 'amitsah@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-11 11:53:24', NULL, 0),
+(60, 'sumit@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-11 11:53:33', NULL, 0),
+(61, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-11 11:53:38', NULL, 1),
+(62, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-11 12:40:06', NULL, 1),
+(63, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-12 12:31:42', '12-11-2023 07:25:37 PM', 1),
+(64, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-12 15:06:05', '12-11-2023 08:38:03 PM', 1),
+(65, 'sac@gmial.com', 0x3a3a3100000000000000000000000000, '2023-11-12 15:28:57', NULL, 0),
+(66, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-12 15:30:12', '13-11-2023 02:34:52 PM', 1),
+(67, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-13 09:06:32', '13-11-2023 02:36:33 PM', 1),
+(68, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-13 09:08:15', '13-11-2023 02:38:18 PM', 1),
+(69, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-13 12:44:29', '13-11-2023 06:25:50 PM', 1),
+(70, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-14 04:47:15', NULL, 1),
+(71, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-14 05:14:53', NULL, 1),
+(72, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-20 13:23:04', '21-11-2023 02:46:08 PM', 1),
+(73, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-21 09:16:58', '21-11-2023 02:57:33 PM', 1),
+(74, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-21 09:29:51', '21-11-2023 03:00:57 PM', 1),
+(75, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-21 09:37:19', '21-11-2023 03:22:42 PM', 1),
+(76, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-11-25 10:10:12', NULL, 1),
+(77, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-12-24 15:13:07', '24-12-2023 08:46:06 PM', 1),
+(78, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-12-24 15:16:13', '24-12-2023 08:51:19 PM', 1),
+(79, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-12-24 15:24:04', NULL, 1),
+(80, 'Amitsah816@gmail.com', 0x3a3a3100000000000000000000000000, '2023-12-28 13:16:31', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -189,7 +235,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `contactno`, `password`, `shippingAddress`, `shippingState`, `shippingCity`, `shippingPincode`, `billingAddress`, `billingState`, `billingCity`, `billingPincode`, `regDate`, `updationDate`) VALUES
-(1, 'Amit Sah', 'Amitsah816@gmail.com', 9826848172, '5c0914cf41b67431dccd06d3d528edbc', '', '', '', 0, '', '', '', 0, '2017-02-04 19:30:50', '');
+(1, 'Amit Sah', 'Amitsah816@gmail.com', 0, '5c0914cf41b67431dccd06d3d528edbc', 'KTM', 'Bagmati', 'KTM', 110001, 'KTM', 'Bagmati', 'KTM', 110092, '2017-02-04 19:30:50', '');
 
 -- --------------------------------------------------------
 
@@ -318,13 +364,13 @@ ALTER TABLE `subcategory`
 -- AUTO_INCREMENT for table `userlog`
 --
 ALTER TABLE `userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
